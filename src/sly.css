@@ -1,0 +1,39 @@
+.sly {
+	overflow: hidden;
+	position: relative;
+}
+
+.sly__slides {
+	cursor: grab;
+	display: flex;
+}
+
+.sly__slide {
+	box-sizing: border-box;
+	flex-grow: 0;
+	flex-shrink: 0;
+	max-width: 100%;
+}
+
+.sly-pages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.sly-pages__page {
+	background: #000;
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 0;
+	width: 16px;
+	height: 16px;
+	margin: 0 5px;
+	transition: .15s;
+}
+
+.sly-pages__page.active,
+.sly-pages__page:hover {
+	background: #fff;
+}

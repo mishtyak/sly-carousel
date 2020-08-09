@@ -1,0 +1,90 @@
+html {
+	box-sizing: border-box;
+	color: #666;
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	margin: 2vh 0;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 66px;
+	line-height: 1.3;
+	margin: 0 0 1vh;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+main {
+	display: block;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-muted {
+	opacity: .6;
+}
+
+.container {
+	margin: auto;
+	max-width: 1200px;
+	padding: 0 15px;
+}
+
+.sly {
+	outline: 1px solid;
+	margin: 0 0 15px;
+}
+
+.sly_border {
+	border: 1px solid #000;
+}
+
+.sly__slides {
+	margin: 10px 0;
+}
+
+.sly__slide {
+	align-items: center;
+	background: #333;
+	color: #fff;
+	display: flex;
+	font-size: 36px;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	margin-right: 10px;
+}
+
+.sly__slide.active {
+	background: #a03232;
+}
+
+.sly-pages {
+	margin: 0 0 15px;
+}
+
+.sly-controls {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 15px;
+}

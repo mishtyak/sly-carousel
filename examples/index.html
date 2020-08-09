@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sly carousel - examples">
+	<meta name="theme-color" content="#fff">
+
+	<title>Sly carousel</title>
+
+	<link rel="stylesheet" href="../src/sly.css">
+	<link rel="stylesheet" href="app.css">
+
+	<script defer src="../src/sly.js"></script>
+	<script defer src="app.js"></script>
+</head>
+<body>
+<main class="container">
+	<h1>Sly</h1>
+
+	<h2 class="text-center">Horizontal Examples</h2>
+
+	<div class="sly-box">
+		<div class="sly-scrollbar js_sly-scrollbar">
+			<div class="sly-scrollbar__handle">
+				<div class="sly-scrollbar__mouse-area"></div>
+			</div>
+		</div>
+
+		<div class="sly sly_border js_sly">
+			<div class="sly__slides">
+				<div class="sly__slide">0</div>
+
+				<div class="sly__slide">1</div>
+
+				<div class="sly__slide">2</div>
+
+				<div class="sly__slide">3</div>
+
+				<div class="sly__slide">4</div>
+
+				<div class="sly__slide">5</div>
+
+				<div class="sly__slide">6</div>
+
+				<div class="sly__slide">7</div>
+
+				<div class="sly__slide">8</div>
+
+				<div class="sly__slide">9</div>
+
+				<div class="sly__slide">10</div>
+			</div>
+		</div>
+
+		<div class="sly-pages js_sly-pages"></div>
+
+		<div class="sly-controls">
+			<button class="btn js_sly-btn-prev-page"><< page</button>
+			<button class="btn js_sly-btn-prev">< item</button>
+			<button class="btn js_sly-btn-backward">move</button>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-to-start">toStart</button>
+				<button class="btn js_sly-btn-to-center">toCenter</button>
+				<button class="btn js_sly-btn-to-end">toEnd</button>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-to-start" data-item="10"><strong>10</strong> toStart</button>
+				<button class="btn js_sly-btn-to-center" data-item="10"><strong>10</strong> toCenter</button>
+				<button class="btn js_sly-btn-to-end" data-item="10"><strong>10</strong> toEnd</button>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-add">+</button>
+				<button class="btn js_sly-btn-remove">-</button>
+			</div>
+
+			<button class="btn js_sly-btn-forward">move</button>
+			<button class="btn js_sly-btn-next">item ></button>
+			<button class="btn js_sly-btn-next-page">page >></button>
+		</div>
+	</div>
+
+	<h2>Basic <small class="text-muted">- with all the navigation options enabled</small></h2>
+
+	<div id="js_sly-basic-box">
+		<div class="sly-scrollbar js_sly-scrollbar">
+			<div class="sly-scrollbar__handle">
+				<div class="sly-scrollbar__mouse-area"></div>
+			</div>
+		</div>
+
+		<div id="js_sly-basic" class="sly">
+			<ul class="sly__slides">
+				<li class="sly__slide">0</li>
+				<li class="sly__slide">1</li>
+				<li class="sly__slide">2</li>
+				<li class="sly__slide">3</li>
+				<li class="sly__slide">4</li>
+				<li class="sly__slide">5</li>
+				<li class="sly__slide">6</li>
+				<li class="sly__slide">7</li>
+				<li class="sly__slide">8</li>
+				<li class="sly__slide">9</li>
+				<li class="sly__slide">10</li>
+				<li class="sly__slide">11</li>
+				<li class="sly__slide">12</li>
+				<li class="sly__slide">13</li>
+				<li class="sly__slide">14</li>
+				<li class="sly__slide">15</li>
+				<li class="sly__slide">16</li>
+				<li class="sly__slide">17</li>
+				<li class="sly__slide">18</li>
+				<li class="sly__slide">19</li>
+				<li class="sly__slide">20</li>
+				<li class="sly__slide">21</li>
+				<li class="sly__slide">22</li>
+				<li class="sly__slide">23</li>
+				<li class="sly__slide">24</li>
+				<li class="sly__slide">25</li>
+				<li class="sly__slide">26</li>
+				<li class="sly__slide">27</li>
+				<li class="sly__slide">28</li>
+				<li class="sly__slide">29</li>
+			</ul>
+		</div>
+
+		<div class="sly-pages js_sly-pages"></div>
+
+		<div class="sly-controls">
+			<button class="btn js_sly-btn-prev-page"><< page</button>
+			<button class="btn js_sly-btn-prev">< item</button>
+			<button class="btn js_sly-btn-backward">move</button>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-to-start">toStart</button>
+				<button class="btn js_sly-btn-to-center">toCenter</button>
+				<button class="btn js_sly-btn-to-end">toEnd</button>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-to-start" data-item="10"><strong>10</strong> toStart</button>
+				<button class="btn js_sly-btn-to-center" data-item="10"><strong>10</strong> toCenter</button>
+				<button class="btn js_sly-btn-to-end" data-item="10"><strong>10</strong> toEnd</button>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-add">+</button>
+				<button class="btn js_sly-btn-remove">-</button>
+			</div>
+
+			<button class="btn js_sly-btn-forward">move</button>
+			<button class="btn js_sly-btn-next">item ></button>
+			<button class="btn js_sly-btn-next-page">page >></button>
+		</div>
+	</div>
+
+	<h2>Centered <small class="text-muted">- activated or middle item is centered when possible</small></h2>
+
+	<div id="js_sly-centered-box">
+		<div class="sly-scrollbar js_sly-scrollbar">
+			<div class="sly-scrollbar__handle">
+				<div class="sly-scrollbar__mouse-area"></div>
+			</div>
+		</div>
+
+		<div id="js_sly-centered" class="sly">
+			<ul class="sly__slides">
+				<li class="sly__slide">0</li>
+				<li class="sly__slide">1</li>
+				<li class="sly__slide">2</li>
+				<li class="sly__slide">3</li>
+				<li class="sly__slide">4</li>
+				<li class="sly__slide">5</li>
+				<li class="sly__slide">6</li>
+				<li class="sly__slide">7</li>
+				<li class="sly__slide">8</li>
+				<li class="sly__slide">9</li>
+				<li class="sly__slide">10</li>
+				<li class="sly__slide">11</li>
+				<li class="sly__slide">12</li>
+				<li class="sly__slide">13</li>
+				<li class="sly__slide">14</li>
+				<li class="sly__slide">15</li>
+				<li class="sly__slide">16</li>
+				<li class="sly__slide">17</li>
+				<li class="sly__slide">18</li>
+				<li class="sly__slide">19</li>
+				<li class="sly__slide">20</li>
+				<li class="sly__slide">21</li>
+				<li class="sly__slide">22</li>
+				<li class="sly__slide">23</li>
+				<li class="sly__slide">24</li>
+				<li class="sly__slide">25</li>
+				<li class="sly__slide">26</li>
+				<li class="sly__slide">27</li>
+				<li class="sly__slide">28</li>
+				<li class="sly__slide">29</li>
+			</ul>
+		</div>
+
+		<div class="sly-pages js_sly-pages"></div>
+
+		<div class="sly-controls">
+			<button class="btn js_sly-btn-prev-page"><< page</button>
+			<button class="btn js_sly-btn-prev">< item</button>
+			<button class="btn js_sly-btn-backward">move</button>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-to-start">toStart</button>
+				<button class="btn js_sly-btn-to-center">toCenter</button>
+				<button class="btn js_sly-btn-to-end">toEnd</button>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-to-start" data-item="10"><strong>10</strong> toStart</button>
+				<button class="btn js_sly-btn-to-center" data-item="10"><strong>10</strong> toCenter</button>
+				<button class="btn js_sly-btn-to-end" data-item="10"><strong>10</strong> toEnd</button>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-add">+</button>
+				<button class="btn js_sly-btn-remove">-</button>
+			</div>
+
+			<button class="btn js_sly-btn-forward">move</button>
+			<button class="btn js_sly-btn-next">item ></button>
+			<button class="btn js_sly-btn-next-page">page >></button>
+		</div>
+	</div>
+
+	<h2>Force Centered <small class="text-muted">- active item is always centered, and middle item is always activated</small></h2>
+
+	<div id="js_sly-force-centered-box">
+		<div class="sly-scrollbar js_sly-scrollbar">
+			<div class="sly-scrollbar__handle">
+				<div class="sly-scrollbar__mouse-area"></div>
+			</div>
+		</div>
+
+		<div id="js_sly-force-centered" class="sly">
+			<ul class="sly__slides">
+				<li class="sly__slide">0</li>
+				<li class="sly__slide">1</li>
+				<li class="sly__slide">2</li>
+				<li class="sly__slide">3</li>
+				<li class="sly__slide">4</li>
+				<li class="sly__slide">5</li>
+				<li class="sly__slide">6</li>
+				<li class="sly__slide">7</li>
+				<li class="sly__slide">8</li>
+				<li class="sly__slide">9</li>
+				<li class="sly__slide">10</li>
+				<li class="sly__slide">11</li>
+				<li class="sly__slide">12</li>
+				<li class="sly__slide">13</li>
+				<li class="sly__slide">14</li>
+				<li class="sly__slide">15</li>
+				<li class="sly__slide">16</li>
+				<li class="sly__slide">17</li>
+				<li class="sly__slide">18</li>
+				<li class="sly__slide">19</li>
+				<li class="sly__slide">20</li>
+				<li class="sly__slide">21</li>
+				<li class="sly__slide">22</li>
+				<li class="sly__slide">23</li>
+				<li class="sly__slide">24</li>
+				<li class="sly__slide">25</li>
+				<li class="sly__slide">26</li>
+				<li class="sly__slide">27</li>
+				<li class="sly__slide">28</li>
+				<li class="sly__slide">29</li>
+			</ul>
+		</div>
+
+		<div class="sly-pages js_sly-pages"></div>
+
+		<div class="sly-controls">
+			<button class="btn js_sly-btn-prev-page"><< page</button>
+			<button class="btn js_sly-btn-prev">< item</button>
+			<button class="btn js_sly-btn-backward">move</button>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-to-start">toStart</button>
+				<button class="btn js_sly-btn-to-center">toCenter</button>
+				<button class="btn js_sly-btn-to-end">toEnd</button>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-to-start" data-item="10"><strong>10</strong> toStart</button>
+				<button class="btn js_sly-btn-to-center" data-item="10"><strong>10</strong> toCenter</button>
+				<button class="btn js_sly-btn-to-end" data-item="10"><strong>10</strong> toEnd</button>
+			</div>
+
+			<div class="btn-group">
+				<button class="btn js_sly-btn-add">+</button>
+				<button class="btn js_sly-btn-remove">-</button>
+			</div>
+
+			<button class="btn js_sly-btn-forward">move</button>
+			<button class="btn js_sly-btn-next">item ></button>
+			<button class="btn js_sly-btn-next-page">page >></button>
+		</div>
+	</div>
+
+	<h2>Cycling by items <small class="text-muted">- 1 second interval, enabled pause on hover</small></h2>
+
+	<h2>Cycling by pages <small class="text-muted">- starts paused, 1 second interval, enabled pause on hover</small></h2>
+
+	<h2>One item per frame</h2>
+
+	<h2>Crazy <small class="text-muted">- smart navigation with each item having a different size and margins</small></h2>
+
+	<h2>Loop</h2>
+
+	<h2>Responsive</h2>
+</main>
+</body>
+</html>

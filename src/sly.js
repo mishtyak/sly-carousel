@@ -443,9 +443,8 @@
 			if (newPos !== pos.dest) {
 				pos.dest = newPos;
 				trigger('change');
-				if (!renderID) {
+				if (!renderID)
 					render();
-				}
 			}
 
 			// Reset next cycle timeout
@@ -1501,12 +1500,12 @@
 			if (dragging.released) {
 				dragEnd();
 
+				dragging.swing = (dragging.delta - dragging.history[0]) / 40 * 300;
+				dragging.tweese = abs(dragging.swing) > 10;
+
 				// Adjust path with a swing on mouse release
-				if (o.releaseSwing && dragging.slidee) {
-					dragging.swing = (dragging.delta - dragging.history[0]) / 40 * 300;
-					dragging.delta += dragging.swing;
-					dragging.tweese = abs(dragging.swing) > 10;
-				}
+				if (o.releaseSwing && dragging.slidee)
+					dragging.delta += dragging.swing / 2;
 			}
 
 			slideTo(dragging.slidee ? round(dragging.initPos - dragging.delta) : handleToSlidee(dragging.initPos + dragging.delta));

@@ -55,7 +55,8 @@ const sly_basic = new Sly('#js_sly-basic', {
 	activateOn: 'click',
 	mouseDragging: 1,
 	touchDragging: 1,
-	releaseSwing: 1,
+	releaseSwing: false,
+	swingSpeed: 0.2,
 	scrollBar: el_sly_basic_box.querySelector('.js_sly-scrollbar'),
 	scrollBy: 1,
 	pagesBar: el_sly_basic_box.querySelector('.js_sly-pages'),
@@ -65,6 +66,16 @@ const sly_basic = new Sly('#js_sly-basic', {
 	dragHandle: 1,
 	dynamicHandle: 1,
 	clickBar: 1,
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				mouseDragging: 0,
+				scrollBy: 0,
+				visibleItems: 2
+			}
+		}
+	],
 	forward: el_sly_basic_box.querySelector('.js_sly-btn-forward'),
 	backward: el_sly_basic_box.querySelector('.js_sly-btn-backward'),
 	prev: el_sly_basic_box.querySelector('.js_sly-btn-prev'),
